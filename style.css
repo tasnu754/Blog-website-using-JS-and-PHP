@@ -366,6 +366,93 @@
       color: var(--color-white);
     }
 
+    .singlepost {
+      margin: 6rem 0 2rem;
+    }
+    
+    .singlepost_container {
+      width: var(--form-width);
+      background: var(--color-gray-900);
+      padding: 1rem 2rem 3rem;
+    }
+    
+    .singlepost_thumbnail {
+      margin: 1.5rem 0 1rem;
+    }
+    
+    .singlepost_container p {
+      margin-top: 1rem;
+      line-height: 1.7;
+    }
+
+    .category_title {
+      height: 10rem;
+      margin-top: 4.5rem;
+      background: var(--color-gray-900);
+      display: grid;
+      place-items: center;
+    }
+
+    .empty_page {
+      height: 70vh;
+      text-align: center;
+      display: grid;
+      place-content: center;
+    }
+
+    .form_section {
+      display: grid;
+      place-items: center;
+      height: 100vh;
+    }
+    
+    .form_section-container {
+      width: var(--form-width);
+      margin: 2rem;
+    }
+    
+    .alert_message {
+      padding: 0.8rem 1.4rem;
+      margin-bottom: 1rem;
+      border-radius: var(--card-border-radius-2);
+    }
+
+    .alert_message.error {
+      background: var(--color-red-light);
+      color: var(--color-red);
+    }
+    
+    .alert_message.success {
+      background: var(--color-green-light);
+      color: var(--color-green);
+    }
+
+    .form_control {
+      display: flex;
+      flex-direction: column;
+      gap: 0.4rem;
+    }
+    
+    input, textarea, select {
+      padding: 0.8rem 1.4rem;
+      background-color: var(--color-gray-900);
+      border-radius: var(--card-border-radius-2);
+      resize: none;
+      color: var(--color-white);
+      margin-bottom: 0.3rem;
+      width: 100%;
+    }
+
+    .form_section small {
+      margin-top: 1rem;
+      display: block;
+      padding-bottom: 1rem;
+    }
+    
+    .form_section small a {
+      color: var(--color-primary);
+    }
+
 
   /*-----------Responsive-------------*/
   @media screen and (max-width: 800px) {
@@ -501,11 +588,14 @@
       gap: 2rem;
     }
 
-    /* =================== BLOG =================== */
+    .search_bar-container {
+      width: var(--container-width-md);
+    }
 
-.search_bar-container {
-  width: var(--container-width-md);
-}
+    .singlepost_container {
+      background-color: transparent;
+      padding: 0;
+    }
   }
 
 
